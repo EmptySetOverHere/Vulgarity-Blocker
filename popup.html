@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .list{
+            border: 1px solid #dddddd;
+            margin-top: -1px;
+            margin-left: 0px;
+            background-color: #f6f6f6;
+            padding: 8px;
+            padding-left: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            display: block;
+            position: relative;
+        }
+       .text_input{
+           padding: 8px;
+           position: relative;
+       }
+       .close{
+           font-family: unset;
+           position: absolute;
+           top: 50%;
+           right: 0%;
+           padding: 8px;
+           transform: translate(0%, -52%);
+       }
+       .close:hover{
+           background: #bbb;
+       }
+    </style>
+</head>
+<body>
+    <form id="user input">
+        <input type="text" name="BannedWords" id="BannedWords" placeholder="Words You Want To Wipe Out!" class="text_input">
+        <input type="submit" style="display: none;">
+    </form>
+    <div style="height:10px;"></div>
+    <div id="Banned Words"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
